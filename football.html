@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BYU Football — Matthew Fredrick</title>
+
+  <!-- Custom stylesheet (no Bootstrap on this page) -->
   <link rel="stylesheet" href="football.css" />
 </head>
 <body>
 
+<!-- ═══════════════════════ NAV BAR ═══════════════════════ -->
 <header class="nav-bar">
   <a href="index.html" class="site-name">← Matthew Fredrick</a>
   <nav>
@@ -21,53 +24,157 @@
   </nav>
 </header>
 
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
 <div class="hero-section">
   <h1>BYU Cougar Football</h1>
   <p class="hero-sub">Rise &nbsp;·&nbsp; Compete &nbsp;·&nbsp; Dominate</p>
   <p class="scroll-hint">↓ Scroll to explore the game I love</p>
 </div>
 
+<!-- ═══════════════════════ MAIN CONTENT ═══════════════════════ -->
 <div class="main-content">
 
+  <!-- ─── ABOUT ─── -->
   <div id="about" class="content-section anchor-target">
     <h2>The Game That Shaped Me</h2>
     <hr class="gold-divider" />
-    <img src="matthew-uniform.jpg" alt="Matthew Fredrick #16, BYU Cougars" class="responsive-img hero-photo" />
+
+    <!-- Personal photo — upload matthew-uniform.jpg to your GitHub repo root -->
+    <img
+      src="matthew-uniform.jpg"
+      alt="Matthew Fredrick #16, BYU Cougars"
+      class="responsive-img hero-photo"
+    />
     <p class="img-caption">#16 · BYU Cougars · Big 12 Conference</p>
-    <p>Football has been a constant in my life since I was a kid growing up in Utah. The sport demands everything from you — physical toughness, mental sharpness, and the ability to trust the people beside you no matter what. Suiting up for the <strong style="color:#1a47cc;">BYU Cougars</strong> in the Big 12 Conference is something I don't take for granted.</p>
-    <p>After two years serving as a missionary in the Republic of Kiribati, returning to the gridiron meant more to me than ever. Every rep, every film session, every early morning lift is a privilege — and I play like it.</p>
+
+    <p>
+      Football has been a constant in my life since I was a kid growing up in Utah.
+      The sport demands everything from you — physical toughness, mental sharpness,
+      and the ability to trust the people beside you no matter what. Suiting up for
+      the <strong style="color:#C5A642;">BYU Cougars</strong> in the Big 12 Conference
+      is something I don't take for granted.
+    </p>
+    <p>
+      After two years serving as a missionary in the Republic of Kiribati, returning
+      to the gridiron meant more to me than ever. Every rep, every film session, every
+      early morning lift is a privilege — and I play like it.
+    </p>
   </div>
 
+  <!-- ─── WHAT FOOTBALL TEACHES ─── (nested list requirement) -->
   <div id="experience" class="content-section anchor-target">
     <h2>What the Game Teaches You</h2>
     <hr class="gold-divider" />
-    <p>Football is more than X's and O's. Here's what every player learns on the journey from high school to Division I:</p>
+    <p>
+      Football is more than X's and O's. Here's what every player learns on the
+      journey from high school to Division I:
+    </p>
+
+    <!-- Ordered list with embedded unordered lists -->
     <ol class="main-list">
-      <li><strong>Discipline &amp; Routine</strong><ul class="sub-list"><li>6 AM lifts before class, every day</li><li>Film study — understanding the "why" behind every play</li><li>Balancing 20+ hours of football with a full course load</li></ul></li>
-      <li><strong>Team Trust</strong><ul class="sub-list"><li>You win as a unit, not as individuals</li><li>Accountability to 100+ teammates drives your best effort</li><li>Learning to follow before you lead</li></ul></li>
-      <li><strong>Resilience Under Pressure</strong><ul class="sub-list"><li>Bouncing back from injury or a rough game</li><li>Performing in front of 60,000+ fans in LaVell Edwards Stadium</li><li>Staying locked in when the game is on the line</li></ul></li>
-      <li><strong>Goal Setting &amp; Process</strong><ul class="sub-list"><li>Weekly improvement goals set with position coaches</li><li>Season goals vs. individual game focus</li><li>Using adversity as data, not discouragement</li></ul></li>
+      <li>
+        <strong>Discipline &amp; Routine</strong>
+        <ul class="sub-list">
+          <li>6 AM lifts before class, every day</li>
+          <li>Film study — understanding the "why" behind every play</li>
+          <li>Balancing 20+ hours of football with a full course load</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Team Trust</strong>
+        <ul class="sub-list">
+          <li>You win as a unit, not as individuals</li>
+          <li>Accountability to 100+ teammates drives your best effort</li>
+          <li>Learning to follow before you lead</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Resilience Under Pressure</strong>
+        <ul class="sub-list">
+          <li>Bouncing back from injury or a rough game</li>
+          <li>Performing in front of 60,000+ fans in LaVell Edwards Stadium</li>
+          <li>Staying locked in when the game is on the line</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Goal Setting &amp; Process</strong>
+        <ul class="sub-list">
+          <li>Weekly improvement goals set with position coaches</li>
+          <li>Season goals vs. individual game focus</li>
+          <li>Using adversity as data, not discouragement</li>
+        </ul>
+      </li>
     </ol>
   </div>
 
+  <!-- ─── HIGHLIGHTS ─── (multiple YouTube embeds) -->
   <div id="highlights" class="content-section anchor-target">
     <h2>BYU Football Highlights</h2>
     <hr class="gold-divider" />
-    <p>BYU has a storied football tradition — including a national championship in 1984. Watch some of the program's most electric moments below.</p>
+    <p>
+      BYU has a storied football tradition — including a national championship in 1984.
+      Watch some of the program's most electric moments below.
+    </p>
+
     <div class="highlights-grid">
-      <div class="highlight-card"><p class="highlight-label">BYU Football Highlights</p><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3LSL1pTCSbg" title="BYU Football Highlights" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
-      <div class="highlight-card"><p class="highlight-label">BYU Football Highlights</p><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/kbE4Fb5wqC4" title="BYU Football Highlights" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
-      <div class="highlight-card"><p class="highlight-label">BYU Football Highlights</p><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/n_GAON8kGvg" title="BYU Football Highlights" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+
+      <div class="highlight-card">
+        <p class="highlight-label">BYU Football Highlights</p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/3LSL1pTCSbg"
+            title="BYU Football Highlights"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="highlight-card">
+        <p class="highlight-label">BYU Football Highlights</p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/kbE4Fb5wqC4"
+            title="BYU Football Highlights"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="highlight-card">
+        <p class="highlight-label">BYU Football Highlights</p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/n_GAON8kGvg"
+            title="BYU Football Highlights"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
     </div>
   </div>
 
+  <!-- ─── TABLEAU STATS ─── (live interactive embed) -->
   <div id="stats" class="content-section anchor-target">
     <h2>NFL Stats Dashboard</h2>
     <hr class="gold-divider" />
-    <p>Football is as much about numbers as it is about heart. Explore an interactive NFL statistics visualization below — powered by Tableau Public.</p>
+    <p>
+      Football is as much about numbers as it is about heart. Explore an interactive
+      NFL statistics visualization below — powered by Tableau Public.
+    </p>
+
     <div class="tableau-wrapper">
       <div class='tableauPlaceholder' id='viz1700000000000' style='position:relative; width:100%;'>
-        <noscript><a href='https://public.tableau.com/views/NFLStandings/NFLStandings'><img alt='NFL Standings' src='https://public.tableau.com/static/images/NF/NFLStandings/NFLStandings/1_rss.png' style='border:none;' /></a></noscript>
+        <noscript>
+          <a href='https://public.tableau.com/views/NFLStandings/NFLStandings'>
+            <img alt='NFL Standings'
+                 src='https://public.tableau.com/static/images/NF/NFLStandings/NFLStandings/1_rss.png'
+                 style='border:none;' />
+          </a>
+        </noscript>
         <object class='tableauViz' style='display:none;'>
           <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
           <param name='embed_code_version' value='3' />
@@ -83,22 +190,46 @@
           <param name='language' value='en-US' />
         </object>
       </div>
-      <script type='text/javascript'>(function(){var d=document.getElementById('viz1700000000000');var v=d.getElementsByTagName('object')[0];v.style.width='100%';v.style.height=(d.offsetWidth*0.75)+'px';var s=document.createElement('script');s.src='https://public.tableau.com/javascripts/api/viz_v1.js';v.parentNode.insertBefore(s,v);})();</script>
+      <script type='text/javascript'>
+        (function() {
+          var divElement = document.getElementById('viz1700000000000');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width = '100%';
+          vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        })();
+      </script>
     </div>
-    <p class="img-caption">Data via Tableau Public. Interact with filters to explore NFL stats.</p>
+
+    <p class="img-caption">
+      Data via Tableau Public. Interact with filters to explore player stats.
+    </p>
   </div>
 
+  <!-- ─── WEB APP LINK ─── -->
   <div id="app" class="content-section anchor-target" style="text-align:center;">
     <h2>Test Your Football IQ</h2>
     <hr class="gold-divider" style="margin: 12px auto 20px;" />
-    <p>Think you know football? I built a trivia game to put your knowledge to the test. Answer 10 questions about NFL history, records, and stats. How many can you get right?</p>
+    <p>
+      Think you know football? I built a trivia game to put your knowledge to the test.
+      Answer 10 questions about NFL history, records, and stats.
+      How many can you get right?
+    </p>
     <a href="app.html" class="app-link-btn">Play the Football IQ Quiz →</a>
   </div>
 
-</div>
+</div><!-- /main-content -->
 
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
 <footer class="site-footer">
-  <p>&copy; 2026 Matthew Fredrick &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="resume.html">Résumé</a> &nbsp;·&nbsp; <a href="mailto:matthewfred54@gmail.com">matthewfred54@gmail.com</a></p>
+  <p>
+    &copy; 2026 Matthew Fredrick &nbsp;·&nbsp;
+    <a href="index.html">Home</a> &nbsp;·&nbsp;
+    <a href="resume.html">Résumé</a> &nbsp;·&nbsp;
+    <a href="mailto:matthewfred54@gmail.com">matthewfred54@gmail.com</a>
+  </p>
 </footer>
 
 </body>
