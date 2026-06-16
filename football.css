@@ -1,6 +1,7 @@
 /* =========================================================
    football.css — Custom stylesheet for the BYU Football
    scratch page. No Bootstrap used on that page.
+   Color scheme: Royal Blue & White
    ========================================================= */
 
 /* ── 1. GLOBAL RESET & BASE ── */
@@ -12,14 +13,14 @@
 
 body {
   font-family: 'Georgia', 'Times New Roman', serif; /* font family */
-  background-color: #0062B8;                        /* dark navy field background */
-  color: #f0f0f0;                                   /* light font color */
+  background-color: #ffffff;                        /* white background */
+  color: #1a1a2e;                                   /* dark font color */
   line-height: 1.7;
 }
 
 /* ── 2. NAVIGATION BAR ── */
 .nav-bar {
-  background-color: #0062B8;
+  background-color: #1a47cc;                        /* royal blue nav */
   padding: 14px 32px;
   display: flex;
   justify-content: space-between;
@@ -27,20 +28,20 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 3px solid #C5A642;
+  border-bottom: 3px solid #ffffff;
 }
 
 .nav-bar .site-name {
-  font-family: 'Arial', sans-serif; /* different font for nav */
+  font-family: 'Arial', sans-serif;                 /* different font for nav */
   font-size: 1.2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffffff;                                   /* white font color */
   text-decoration: none;
 }
 
 .nav-bar nav a {
   font-family: 'Arial', sans-serif;
-  color: #c8d8e8;
+  color: #ccd9ff;                                   /* light blue-white font color */
   text-decoration: none;
   margin-left: 24px;
   font-size: 0.95rem;
@@ -48,15 +49,15 @@ body {
 }
 
 .nav-bar nav a:hover {
-  color: #C5A642;
+  color: #ffffff;
 }
 
 /* ── 3. HERO SECTION DIV ── */
 .hero-section {
-  background: linear-gradient(160deg, #0062B8 0%, #001a38 60%, #0062B8 100%);
+  background: linear-gradient(160deg, #1a47cc 0%, #0a2a80 60%, #1a47cc 100%);
   text-align: center;
   padding: 80px 20px 60px;
-  border-bottom: 4px solid #C5A642;
+  border-bottom: 4px solid #ffffff;
 }
 
 .hero-section h1 {
@@ -72,7 +73,7 @@ body {
 .hero-section .hero-sub {
   font-family: 'Arial', sans-serif;
   font-size: 1.15rem;
-  color: #C5A642;                                   /* gold font color */
+  color: #ccd9ff;                                   /* light blue font color */
   margin-top: 12px;
   letter-spacing: 1px;
 }
@@ -80,7 +81,7 @@ body {
 .hero-section .scroll-hint {
   margin-top: 32px;
   font-size: 0.85rem;
-  color: #8a9db5;
+  color: #99b3ff;
   font-style: italic;
 }
 
@@ -93,30 +94,30 @@ body {
 
 /* ── 5. CONTENT SECTIONS ── */
 .content-section {
-  background-color: #004f94;                        /* slightly lighter navy */
+  background-color: #f0f4ff;                        /* very light blue-white */
   border-radius: 10px;
   padding: 32px 36px;
   margin-bottom: 36px;
-  border-left: 5px solid #C5A642;
+  border-left: 5px solid #1a47cc;                  /* royal blue accent */
 }
 
 .content-section h2 {
   font-family: 'Arial Black', 'Arial', sans-serif;
   font-size: 1.5rem;
-  color: #C5A642;                                   /* gold font color */
+  color: #1a47cc;                                   /* royal blue font color */
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 16px;
 }
 
 .content-section p {
-  color: #c8d8e8;                                   /* light blue-grey font color */
+  color: #2a2a4a;                                   /* dark navy font color */
   margin-bottom: 12px;
 }
 
 /* ── 6. LISTS ── */
 ol.main-list {
-  color: #c8d8e8;
+  color: #2a2a4a;
   padding-left: 20px;
   margin-top: 10px;
 }
@@ -127,7 +128,7 @@ ol.main-list li {
 }
 
 ul.sub-list {
-  color: #a8c0d4;
+  color: #3a4a7a;
   padding-left: 20px;
   margin-top: 6px;
   list-style-type: disc;
@@ -144,7 +145,7 @@ ul.sub-list li {
   max-width: 860px;
   height: auto;
   border-radius: 8px;
-  border: 3px solid #C5A642;
+  border: 3px solid #1a47cc;                       /* royal blue border */
   display: block;
   margin: 20px auto;
 }
@@ -160,7 +161,7 @@ ul.sub-list li {
 .img-caption {
   text-align: center;
   font-size: 0.85rem;
-  color: #8a9db5;
+  color: #5566aa;
   font-style: italic;
   margin-top: 6px;
 }
@@ -174,16 +175,17 @@ ul.sub-list li {
 }
 
 .highlight-card {
-  background-color: #003d75;
+  background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
-  border: 2px solid #C5A642;
+  border: 2px solid #1a47cc;
+  box-shadow: 0 2px 8px rgba(26, 71, 204, 0.15);
 }
 
 .highlight-label {
   font-family: 'Arial Black', 'Arial', sans-serif;
   font-size: 0.85rem;
-  color: #C5A642;
+  color: #1a47cc;                                   /* royal blue font color */
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding: 10px 14px 6px;
@@ -193,7 +195,7 @@ ul.sub-list li {
 /* ── 9. VIDEO EMBED WRAPPER ── */
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;                           /* 16:9 */
   height: 0;
   overflow: hidden;
 }
@@ -210,7 +212,7 @@ ul.sub-list li {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  background-color: #002a55;
+  background-color: #dce6ff;
 }
 
 .video-placeholder span {
@@ -219,7 +221,7 @@ ul.sub-list li {
   transform: translate(-50%, -50%);
   font-family: 'Arial', sans-serif;
   font-size: 0.8rem;
-  color: #5a7a9a;
+  color: #7a8fbf;
   text-align: center;
   width: 90%;
 }
@@ -229,7 +231,7 @@ ul.sub-list li {
   margin: 20px 0;
   border-radius: 8px;
   overflow: hidden;
-  border: 2px solid #004f94;
+  border: 2px solid #1a47cc;
 }
 
 /* ── 11. ANCHOR TARGET OFFSET ── */
@@ -237,10 +239,10 @@ ul.sub-list li {
   scroll-margin-top: 80px;
 }
 
-/* ── 12. GOLD DIVIDER ── */
+/* ── 12. BLUE DIVIDER ── */
 .gold-divider {
   border: none;
-  border-top: 3px solid #C5A642;
+  border-top: 3px solid #1a47cc;                   /* royal blue divider */
   width: 60px;
   margin: 12px 0 20px;
 }
@@ -248,8 +250,8 @@ ul.sub-list li {
 /* ── 13. APP BUTTON ── */
 .app-link-btn {
   display: inline-block;
-  background-color: #C5A642;
-  color: #0062B8;
+  background-color: #1a47cc;                        /* royal blue button */
+  color: #ffffff;                                   /* white font color */
   font-family: 'Arial Black', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -263,24 +265,24 @@ ul.sub-list li {
 }
 
 .app-link-btn:hover {
-  background-color: #a8892e;
-  color: #fff;
+  background-color: #0a2a80;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
 /* ── 14. FOOTER DIV ── */
 .site-footer {
-  background-color: #0062B8;
-  color: #8a9db5;
+  background-color: #1a47cc;                        /* royal blue footer */
+  color: #ccd9ff;                                   /* light blue-white font color */
   text-align: center;
   padding: 24px 20px;
   font-family: 'Arial', sans-serif;
   font-size: 0.88rem;
-  border-top: 3px solid #C5A642;
+  border-top: 3px solid #ffffff;
 }
 
 .site-footer a {
-  color: #C5A642;
+  color: #ffffff;
   text-decoration: none;
 }
 
