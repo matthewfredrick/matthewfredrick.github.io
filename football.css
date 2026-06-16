@@ -12,14 +12,14 @@
 
 body {
   font-family: 'Georgia', 'Times New Roman', serif; /* font family */
-  background-color: #0a1628;                        /* dark navy field background */
+  background-color: #0062B8;                        /* dark navy field background */
   color: #f0f0f0;                                   /* light font color */
   line-height: 1.7;
 }
 
 /* ── 2. NAVIGATION BAR ── */
 .nav-bar {
-  background-color: #002E5D;
+  background-color: #0062B8;
   padding: 14px 32px;
   display: flex;
   justify-content: space-between;
@@ -53,7 +53,7 @@ body {
 
 /* ── 3. HERO SECTION DIV ── */
 .hero-section {
-  background: linear-gradient(160deg, #002E5D 0%, #001a38 60%, #0a1628 100%);
+  background: linear-gradient(160deg, #0062B8 0%, #001a38 60%, #0062B8 100%);
   text-align: center;
   padding: 80px 20px 60px;
   border-bottom: 4px solid #C5A642;
@@ -93,7 +93,7 @@ body {
 
 /* ── 5. CONTENT SECTIONS ── */
 .content-section {
-  background-color: #0f2140;                        /* slightly lighter navy */
+  background-color: #004f94;                        /* slightly lighter navy */
   border-radius: 10px;
   padding: 32px 36px;
   margin-bottom: 36px;
@@ -180,7 +180,7 @@ ul.sub-list li {
   margin: 20px 0;
   border-radius: 8px;
   overflow: hidden;
-  border: 2px solid #1e3a5f;
+  border: 2px solid #004f94;
 }
 
 /* ── 10. ANCHOR TARGET OFFSET ── */
@@ -200,7 +200,7 @@ ul.sub-list li {
 .app-link-btn {
   display: inline-block;
   background-color: #C5A642;
-  color: #002E5D;
+  color: #0062B8;
   font-family: 'Arial Black', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -221,7 +221,7 @@ ul.sub-list li {
 
 /* ── 13. FOOTER DIV ── */
 .site-footer {
-  background-color: #002E5D;
+  background-color: #0062B8;
   color: #8a9db5;
   text-align: center;
   padding: 24px 20px;

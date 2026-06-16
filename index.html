@@ -8,47 +8,47 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <style>
     :root {
-      --navy: #002E5D;
       --royal: #0062B8;
-      --gold:  #C5A642;
+      --royal-dark: #004f94;
+      --white: #ffffff;
     }
 
     /* ── Navbar ── */
-    .navbar { background-color: var(--navy); }
+    .navbar { background-color: var(--royal); }
 
     /* ── Hero ── */
     .hero {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--royal) 100%);
+      background: var(--royal);
       color: #fff;
       padding: 110px 0 90px;
     }
     .hero h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; }
     .hero .subtitle { font-size: 1.25rem; opacity: .85; }
-    .btn-gold { background-color: var(--gold); color: #fff; border: none; }
-    .btn-gold:hover { background-color: #a8892e; color: #fff; }
+    .btn-white { background-color: #fff; color: var(--royal); border: none; font-weight: 700; }
+    .btn-white:hover { background-color: #e6e6e6; color: var(--royal); }
 
     /* ── Section headings ── */
-    .section-title { color: var(--navy); font-weight: 700; }
+    .section-title { color: var(--royal); font-weight: 700; }
     .title-bar {
       width: 56px; height: 4px;
-      background: var(--gold);
+      background: var(--royal);
       margin: 8px auto 28px;
       border-radius: 2px;
     }
 
     /* ── Stat cards ── */
     .stat-card {
-      border: none;
+      border: 2px solid #e0ecf8;
       border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      box-shadow: 0 4px 18px rgba(0,98,184,.08);
       transition: transform .2s;
     }
-    .stat-card:hover { transform: translateY(-4px); }
+    .stat-card:hover { transform: translateY(-4px); border-color: var(--royal); }
     .stat-icon { font-size: 2rem; color: var(--royal); }
 
     /* ── Skills ── */
     .skill-pill {
-      background-color: var(--navy);
+      background-color: var(--royal);
       color: #fff;
       border-radius: 50px;
       padding: 6px 18px;
@@ -57,11 +57,11 @@
 
     /* ── Footer ── */
     footer {
-      background-color: var(--navy);
-      color: #adb5bd;
+      background-color: var(--royal);
+      color: rgba(255,255,255,.75);
     }
     footer a { color: #fff; transition: color .15s; }
-    footer a:hover { color: var(--gold); }
+    footer a:hover { color: rgba(255,255,255,.75); }
   </style>
 </head>
 <body>
@@ -93,7 +93,7 @@
     <p class="subtitle mt-2 mb-4">
       Using discipline forged on the football field to build a future in finance.
     </p>
-    <a href="resume.html" class="btn btn-gold btn-lg me-2 px-4">View Résumé</a>
+    <a href="resume.html" class="btn btn-white btn-lg me-2 px-4">View Résumé</a>
     <a href="mailto:matthewfred54@gmail.com" class="btn btn-outline-light btn-lg px-4">Contact</a>
   </div>
 </section>
