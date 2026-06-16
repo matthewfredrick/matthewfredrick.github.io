@@ -149,6 +149,14 @@ ul.sub-list li {
   margin: 20px auto;
 }
 
+/* Personal hero photo — taller portrait crop */
+.hero-photo {
+  max-width: 480px;
+  max-height: 640px;
+  object-fit: cover;
+  object-position: top;
+}
+
 .img-caption {
   text-align: center;
   font-size: 0.85rem;
@@ -157,15 +165,37 @@ ul.sub-list li {
   margin-top: 6px;
 }
 
-/* ── 8. VIDEO EMBED WRAPPER ── */
+/* ── 8. HIGHLIGHTS GRID ── */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.highlight-card {
+  background-color: #003d75;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #C5A642;
+}
+
+.highlight-label {
+  font-family: 'Arial Black', 'Arial', sans-serif;
+  font-size: 0.85rem;
+  color: #C5A642;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 14px 6px;
+  margin-bottom: 0;
+}
+
+/* ── 9. VIDEO EMBED WRAPPER ── */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
-  border-radius: 8px;
-  border: 3px solid #C5A642;
-  margin: 20px 0;
 }
 
 .video-wrapper iframe {
@@ -175,7 +205,26 @@ ul.sub-list li {
   border: none;
 }
 
-/* ── 9. TABLEAU WRAPPER ── */
+/* Placeholder for videos not yet added */
+.video-placeholder {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  background-color: #002a55;
+}
+
+.video-placeholder span {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Arial', sans-serif;
+  font-size: 0.8rem;
+  color: #5a7a9a;
+  text-align: center;
+  width: 90%;
+}
+
+/* ── 10. TABLEAU WRAPPER ── */
 .tableau-wrapper {
   margin: 20px 0;
   border-radius: 8px;
@@ -183,12 +232,12 @@ ul.sub-list li {
   border: 2px solid #004f94;
 }
 
-/* ── 10. ANCHOR TARGET OFFSET ── */
+/* ── 11. ANCHOR TARGET OFFSET ── */
 .anchor-target {
   scroll-margin-top: 80px;
 }
 
-/* ── 11. GOLD DIVIDER ── */
+/* ── 12. GOLD DIVIDER ── */
 .gold-divider {
   border: none;
   border-top: 3px solid #C5A642;
@@ -196,7 +245,7 @@ ul.sub-list li {
   margin: 12px 0 20px;
 }
 
-/* ── 12. APP BUTTON ── */
+/* ── 13. APP BUTTON ── */
 .app-link-btn {
   display: inline-block;
   background-color: #C5A642;
@@ -219,7 +268,7 @@ ul.sub-list li {
   transform: translateY(-2px);
 }
 
-/* ── 13. FOOTER DIV ── */
+/* ── 14. FOOTER DIV ── */
 .site-footer {
   background-color: #0062B8;
   color: #8a9db5;

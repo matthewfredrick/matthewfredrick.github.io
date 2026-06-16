@@ -18,6 +18,7 @@
     <a href="resume.html">Résumé</a>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
+    <a href="#highlights">Highlights</a>
     <a href="#stats">Stats</a>
     <a href="#app">Quiz App</a>
   </nav>
@@ -37,6 +38,15 @@
   <div id="about" class="content-section anchor-target">
     <h2>The Game That Shaped Me</h2>
     <hr class="gold-divider" />
+
+    <!-- Personal photo — upload matthew-uniform.jpg to your GitHub repo root -->
+    <img
+      src="matthew-uniform.jpg"
+      alt="Matthew Fredrick #16, BYU Cougars"
+      class="responsive-img hero-photo"
+    />
+    <p class="img-caption">#16 · BYU Cougars · Big 12 Conference</p>
+
     <p>
       Football has been a constant in my life since I was a kid growing up in Utah.
       The sport demands everything from you — physical toughness, mental sharpness,
@@ -49,14 +59,6 @@
       to the gridiron meant more to me than ever. Every rep, every film session, every
       early morning lift is a privilege — and I play like it.
     </p>
-
-    <!-- Photo from BYU Football (image not from Bootstrap theme) -->
-    <img
-      src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=860&q=80"
-      alt="College football stadium at night under bright lights"
-      class="responsive-img"
-    />
-    <p class="img-caption">The lights hit different on game night.</p>
   </div>
 
   <!-- ─── WHAT FOOTBALL TEACHES ─── (nested list requirement) -->
@@ -105,31 +107,45 @@
     </ol>
   </div>
 
-  <!-- ─── BYU FOOTBALL HIGHLIGHT VIDEO ─── (YouTube embed) -->
-  <div id="video" class="content-section anchor-target">
+  <!-- ─── HIGHLIGHTS ─── (multiple YouTube embeds) -->
+  <div id="highlights" class="content-section anchor-target">
     <h2>BYU Football Highlights</h2>
     <hr class="gold-divider" />
     <p>
       BYU has a storied football tradition — including a national championship in 1984.
       Watch some of the program's most electric moments below.
     </p>
-    <div class="video-wrapper">
-      <!--
-        YouTube embed. The video ID below (dM6CQWX8vFk) shows BYU Football
-        highlights. Replace the ID in the src URL to swap in any YouTube video.
-        Format: https://www.youtube.com/embed/VIDEO_ID
-        NOTE: This will only work once your site is hosted online (not locally).
-      -->
-      <iframe
-        src="https://www.youtube.com/embed/dM6CQWX8vFk"
-        title="BYU Football Highlights"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+
+    <div class="highlights-grid">
+
+      <div class="highlight-card">
+        <p class="highlight-label">BYU Highlights 2024</p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/dM6CQWX8vFk"
+            title="BYU Football Highlights 2024"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- ADD YOUR VIDEOS: replace VIDEO_ID_2 and VIDEO_ID_3 with real YouTube IDs -->
+      <div class="highlight-card">
+        <p class="highlight-label">Highlight 2 — Coming Soon</p>
+        <div class="video-placeholder">
+          <span>Paste your YouTube link here</span>
+        </div>
+      </div>
+
+      <div class="highlight-card">
+        <p class="highlight-label">Highlight 3 — Coming Soon</p>
+        <div class="video-placeholder">
+          <span>Paste your YouTube link here</span>
+        </div>
+      </div>
+
     </div>
-    <p class="img-caption">
-      Replace the video ID in football.html if you prefer a different clip.
-    </p>
   </div>
 
   <!-- ─── TABLEAU STATS ─── (live interactive embed) -->
@@ -142,12 +158,6 @@
     </p>
 
     <div class="tableau-wrapper">
-      <!--
-        Live Tableau Public embed — NFL 2022 Stats Dashboard.
-        This pulls from Tableau's CDN and renders an interactive viz.
-        To swap in a different viz: go to Tableau Public, find a viz you like,
-        click Share → Embed, and replace the code below.
-      -->
       <div class='tableauPlaceholder' id='viz1700000000000' style='position:relative; width:100%;'>
         <noscript>
           <a href='https://public.tableau.com/app/profile/mike.cisneros/viz/NFLOffensiveStats2022/NFLOffense2022'>
