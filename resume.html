@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Résumé — Matthew Fredrick</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #002E5D;
+      --royal: #0062B8;
+      --gold:  #C5A642;
+    }
+
+    body { background: #f4f6f8; }
+
+    .navbar { background-color: var(--navy); }
+
+    .page-header {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--royal) 100%);
+      color: #fff;
+      padding: 60px 0 50px;
+    }
+    .page-header h1 { font-size: 2.8rem; font-weight: 800; }
+
+    .resume-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.07);
+      padding: 32px 36px;
+      margin-bottom: 24px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .section-heading {
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 1.3rem;
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+    }
+
+    .entry-title { font-weight: 700; color: var(--navy); font-size: 1.05rem; }
+    .entry-org   { color: var(--royal); font-weight: 600; }
+    .entry-date  { color: #6c757d; font-size: .88rem; }
+
+    .skill-tag {
+      display: inline-block;
+      background: #e8edf3;
+      color: var(--navy);
+      border-radius: 50px;
+      padding: 4px 14px;
+      font-size: .85rem;
+      margin: 3px;
+    }
+
+    footer { background-color: var(--navy); color: #adb5bd; }
+    footer a { color: #fff; }
+    footer a:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-white" href="index.html">Matthew Fredrick</a>
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="resume.html">Résumé</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header text-center">
+  <div class="container">
+    <h1>Matthew Fredrick</h1>
+    <p class="mb-1 opacity-75">Provo, Utah &nbsp;|&nbsp; matthewfred54@gmail.com</p>
+    <p class="opacity-75">Student Athlete &nbsp;·&nbsp; Finance &nbsp;·&nbsp; NIL Athlete</p>
+  </div>
+</div>
+
+<!-- RESUME BODY -->
+<div class="container py-5" style="max-width: 860px;">
+
+  <!-- EDUCATION -->
+  <div class="resume-card">
+    <div class="section-label">Education</div>
+    <h2 class="section-heading">Education</h2>
+
+    <div class="mb-4">
+      <div class="d-flex justify-content-between align-items-start flex-wrap">
+        <div>
+          <div class="entry-title">Bachelor of Science in Business Management</div>
+          <div class="entry-org">Brigham Young University &mdash; Marriott School of Business</div>
+          <div class="text-muted small">Provo, Utah</div>
+        </div>
+        <div class="entry-date text-end">
+          Expected Graduation: May 2028<br/>
+          <em>Pre-Business &mdash; Finance Emphasis</em>
+        </div>
+      </div>
+      <ul class="mt-2 text-secondary">
+        <li>GPA: 3.X / 4.0 (update with your actual GPA)</li>
+        <li>Relevant Coursework: Financial Accounting, Microeconomics, Business Statistics,
+            Introduction to Finance, Management Communication</li>
+        <li>Full-time student while competing as a Division I student-athlete</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="resume-card">
+    <div class="section-label">Experience</div>
+    <h2 class="section-heading">Work Experience</h2>
+
+    <!-- Blue Unicorn -->
+    <div class="mb-4 pb-3 border-bottom">
+      <div class="d-flex justify-content-between align-items-start flex-wrap">
+        <div>
+          <div class="entry-title">Marketing &amp; Brand Intern</div>
+          <div class="entry-org">Blue Unicorn Protein Bar</div>
+        </div>
+        <div class="entry-date">Summer 2026 &mdash; Present</div>
+      </div>
+      <ul class="mt-2 text-secondary">
+        <li>Collaborated with the marketing team to develop NIL partnership content
+            aligned with the brand's health-focused identity</li>
+        <li>Assisted in social media strategy and content creation to grow brand
+            awareness among collegiate and athletic audiences</li>
+        <li>Analyzed market trends and competitor positioning to identify growth
+            opportunities in the functional food space</li>
+        <li>Represented Blue Unicorn as a brand ambassador at promotional events</li>
+      </ul>
+    </div>
+
+    <!-- Mission -->
+    <div class="mb-1">
+      <div class="d-flex justify-content-between align-items-start flex-wrap">
+        <div>
+          <div class="entry-title">Full-Time Volunteer Missionary</div>
+          <div class="entry-org">The Church of Jesus Christ of Latter-day Saints</div>
+          <div class="text-muted small">Republic of Kiribati, South Pacific</div>
+        </div>
+        <div class="entry-date">2022 &mdash; 2024</div>
+      </div>
+      <ul class="mt-2 text-secondary">
+        <li>Directed a team of 6–12 missionaries in planning, training, and
+            community outreach programs across multiple districts</li>
+        <li>Achieved working fluency in I-Kiribati (Gilbertese), communicating
+            complex ideas in a completely foreign language within months</li>
+        <li>Managed weekly logistics, budgets, and reporting for district-level
+            operations in resource-limited environments</li>
+        <li>Developed resilience, cross-cultural communication, and servant
+            leadership skills through two years of full-time service</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ATHLETICS -->
+  <div class="resume-card">
+    <div class="section-label">Athletics</div>
+    <h2 class="section-heading">Athletic Experience</h2>
+
+    <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+      <div>
+        <div class="entry-title">Division I Football Student-Athlete</div>
+        <div class="entry-org">BYU Cougars Football — Big 12 Conference</div>
+      </div>
+      <div class="entry-date">2024 &mdash; Present</div>
+    </div>
+    <ul class="text-secondary">
+      <li>Balances 20+ hours per week of practice, film study, and conditioning
+          while maintaining full academic course load</li>
+      <li>Demonstrates elite time management, competing at a nationally recognized
+          Division I program</li>
+      <li>Builds NIL brand partnerships that align with personal values and
+          financial goals</li>
+      <li>Contributes to a high-performance team culture rooted in accountability
+          and continuous improvement</li>
+    </ul>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="resume-card">
+    <div class="section-label">Skills</div>
+    <h2 class="section-heading">Skills &amp; Competencies</h2>
+
+    <div class="row g-3">
+      <div class="col-md-4">
+        <h6 class="text-muted small fw-bold text-uppercase mb-2">Technical</h6>
+        <div>
+          <span class="skill-tag">Microsoft Excel</span>
+          <span class="skill-tag">Financial Modeling</span>
+          <span class="skill-tag">Data Analysis</span>
+          <span class="skill-tag">PowerPoint</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-muted small fw-bold text-uppercase mb-2">Business</h6>
+        <div>
+          <span class="skill-tag">Financial Analysis</span>
+          <span class="skill-tag">Brand Strategy</span>
+          <span class="skill-tag">Market Research</span>
+          <span class="skill-tag">Social Media</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-muted small fw-bold text-uppercase mb-2">Personal</h6>
+        <div>
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Public Speaking</span>
+          <span class="skill-tag">Team Building</span>
+          <span class="skill-tag">I-Kiribati Language</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HONORS -->
+  <div class="resume-card">
+    <div class="section-label">Honors &amp; Activities</div>
+    <h2 class="section-heading">Honors &amp; Activities</h2>
+    <ul class="text-secondary mb-0">
+      <li>BYU Dean's List (add semester if applicable)</li>
+      <li>Big 12 Conference Football Athlete</li>
+      <li>NIL Brand Ambassador — Blue Unicorn Protein Bar (2026–Present)</li>
+      <li>Two-Year Service Mission — Republic of Kiribati (2022–2024)</li>
+      <li>Utah High School Athletics (add any awards/honors here)</li>
+    </ul>
+  </div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="py-4 text-center">
+  <div class="container">
+    <div class="mb-3 d-flex justify-content-center gap-4">
+      <a href="mailto:matthewfred54@gmail.com" title="Email">
+        <i class="fas fa-envelope fa-lg"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+    </div>
+    <p class="mb-0 small">&copy; 2026 Matthew Fredrick. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

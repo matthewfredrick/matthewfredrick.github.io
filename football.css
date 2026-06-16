@@ -1,0 +1,240 @@
+/* =========================================================
+   football.css — Custom stylesheet for the BYU Football
+   scratch page. No Bootstrap used on that page.
+   ========================================================= */
+
+/* ── 1. GLOBAL RESET & BASE ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif; /* font family */
+  background-color: #0a1628;                        /* dark navy field background */
+  color: #f0f0f0;                                   /* light font color */
+  line-height: 1.7;
+}
+
+/* ── 2. NAVIGATION BAR ── */
+.nav-bar {
+  background-color: #002E5D;
+  padding: 14px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid #C5A642;
+}
+
+.nav-bar .site-name {
+  font-family: 'Arial', sans-serif; /* different font for nav */
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-bar nav a {
+  font-family: 'Arial', sans-serif;
+  color: #c8d8e8;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-bar nav a:hover {
+  color: #C5A642;
+}
+
+/* ── 3. HERO SECTION DIV ── */
+.hero-section {
+  background: linear-gradient(160deg, #002E5D 0%, #001a38 60%, #0a1628 100%);
+  text-align: center;
+  padding: 80px 20px 60px;
+  border-bottom: 4px solid #C5A642;
+}
+
+.hero-section h1 {
+  font-family: 'Arial Black', 'Arial', sans-serif; /* font family */
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ffffff;                                   /* white font color */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.hero-section .hero-sub {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.15rem;
+  color: #C5A642;                                   /* gold font color */
+  margin-top: 12px;
+  letter-spacing: 1px;
+}
+
+.hero-section .scroll-hint {
+  margin-top: 32px;
+  font-size: 0.85rem;
+  color: #8a9db5;
+  font-style: italic;
+}
+
+/* ── 4. MAIN CONTENT DIV ── */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+/* ── 5. CONTENT SECTIONS ── */
+.content-section {
+  background-color: #0f2140;                        /* slightly lighter navy */
+  border-radius: 10px;
+  padding: 32px 36px;
+  margin-bottom: 36px;
+  border-left: 5px solid #C5A642;
+}
+
+.content-section h2 {
+  font-family: 'Arial Black', 'Arial', sans-serif;
+  font-size: 1.5rem;
+  color: #C5A642;                                   /* gold font color */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.content-section p {
+  color: #c8d8e8;                                   /* light blue-grey font color */
+  margin-bottom: 12px;
+}
+
+/* ── 6. LISTS ── */
+ol.main-list {
+  color: #c8d8e8;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ol.main-list li {
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+}
+
+ul.sub-list {
+  color: #a8c0d4;
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: disc;
+}
+
+ul.sub-list li {
+  margin-bottom: 5px;
+  font-size: 0.92rem;
+}
+
+/* ── 7. IMAGES ── */
+.responsive-img {
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #C5A642;
+  display: block;
+  margin: 20px auto;
+}
+
+.img-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #8a9db5;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* ── 8. VIDEO EMBED WRAPPER ── */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 3px solid #C5A642;
+  margin: 20px 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+/* ── 9. TABLEAU WRAPPER ── */
+.tableau-wrapper {
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #1e3a5f;
+}
+
+/* ── 10. ANCHOR TARGET OFFSET ── */
+.anchor-target {
+  scroll-margin-top: 80px;
+}
+
+/* ── 11. GOLD DIVIDER ── */
+.gold-divider {
+  border: none;
+  border-top: 3px solid #C5A642;
+  width: 60px;
+  margin: 12px 0 20px;
+}
+
+/* ── 12. APP BUTTON ── */
+.app-link-btn {
+  display: inline-block;
+  background-color: #C5A642;
+  color: #002E5D;
+  font-family: 'Arial Black', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 12px;
+}
+
+.app-link-btn:hover {
+  background-color: #a8892e;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ── 13. FOOTER DIV ── */
+.site-footer {
+  background-color: #002E5D;
+  color: #8a9db5;
+  text-align: center;
+  padding: 24px 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.88rem;
+  border-top: 3px solid #C5A642;
+}
+
+.site-footer a {
+  color: #C5A642;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}

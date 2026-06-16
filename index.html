@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matthew Fredrick</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #002E5D;
+      --royal: #0062B8;
+      --gold:  #C5A642;
+    }
+
+    /* ── Navbar ── */
+    .navbar { background-color: var(--navy); }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--royal) 100%);
+      color: #fff;
+      padding: 110px 0 90px;
+    }
+    .hero h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; }
+    .hero .subtitle { font-size: 1.25rem; opacity: .85; }
+    .btn-gold { background-color: var(--gold); color: #fff; border: none; }
+    .btn-gold:hover { background-color: #a8892e; color: #fff; }
+
+    /* ── Section headings ── */
+    .section-title { color: var(--navy); font-weight: 700; }
+    .title-bar {
+      width: 56px; height: 4px;
+      background: var(--gold);
+      margin: 8px auto 28px;
+      border-radius: 2px;
+    }
+
+    /* ── Stat cards ── */
+    .stat-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      transition: transform .2s;
+    }
+    .stat-card:hover { transform: translateY(-4px); }
+    .stat-icon { font-size: 2rem; color: var(--royal); }
+
+    /* ── Skills ── */
+    .skill-pill {
+      background-color: var(--navy);
+      color: #fff;
+      border-radius: 50px;
+      padding: 6px 18px;
+      font-size: .9rem;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background-color: var(--navy);
+      color: #adb5bd;
+    }
+    footer a { color: #fff; transition: color .15s; }
+    footer a:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-5 text-white" href="index.html">Matthew Fredrick</a>
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero text-center">
+  <div class="container">
+    <p class="text-uppercase fw-semibold mb-1" style="letter-spacing:3px;opacity:.7;font-size:.85rem;">
+      BYU Student Athlete &nbsp;·&nbsp; Finance &nbsp;·&nbsp; NIL Brand Builder
+    </p>
+    <h1>Matthew Fredrick</h1>
+    <p class="subtitle mt-2 mb-4">
+      Using discipline forged on the football field to build a future in finance.
+    </p>
+    <a href="resume.html" class="btn btn-gold btn-lg me-2 px-4">View Résumé</a>
+    <a href="mailto:matthewfred54@gmail.com" class="btn btn-outline-light btn-lg px-4">Contact</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center section-title">About Me</h2>
+    <div class="title-bar"></div>
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <p class="fs-5 text-secondary lh-lg">
+          I'm a student-athlete at <strong>Brigham Young University</strong>, competing
+          in Division I football while pursuing a pre-business degree focused on
+          <strong>finance</strong>. The same drive that pushes me through two-a-days
+          pushes me to understand markets, build wealth, and make a meaningful impact
+          with numbers.
+        </p>
+        <p class="text-secondary lh-lg">
+          Before returning to BYU, I spent two years as a missionary in the
+          <strong>Republic of Kiribati</strong> — a remote island nation in the Pacific.
+          That experience reshaped how I see the world, taught me to adapt under pressure,
+          and gave me a deep appreciation for community. Now I'm channeling that energy
+          into a new internship with <strong>Blue Unicorn</strong> (a protein bar brand),
+          growing my <strong>NIL presence</strong>, and building the life I've always
+          dreamed of.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card stat-card p-4 text-center">
+              <div class="stat-icon mb-2"><i class="fas fa-football"></i></div>
+              <h6 class="fw-bold mb-0">BYU Football</h6>
+              <small class="text-muted">Division I Athlete</small>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card stat-card p-4 text-center">
+              <div class="stat-icon mb-2"><i class="fas fa-chart-line"></i></div>
+              <h6 class="fw-bold mb-0">Finance</h6>
+              <small class="text-muted">Pre-Business Major</small>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card stat-card p-4 text-center">
+              <div class="stat-icon mb-2"><i class="fas fa-globe-asia"></i></div>
+              <h6 class="fw-bold mb-0">Kiribati Mission</h6>
+              <small class="text-muted">2 Years of Service</small>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card stat-card p-4 text-center">
+              <div class="stat-icon mb-2"><i class="fas fa-star"></i></div>
+              <h6 class="fw-bold mb-0">NIL Brand</h6>
+              <small class="text-muted">Blue Unicorn Partner</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+<section class="py-5" style="background:#f8f9fa;">
+  <div class="container text-center">
+    <h2 class="section-title">Skills &amp; Strengths</h2>
+    <div class="title-bar"></div>
+    <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
+      <span class="skill-pill">Financial Analysis</span>
+      <span class="skill-pill">Leadership</span>
+      <span class="skill-pill">Brand Development</span>
+      <span class="skill-pill">Microsoft Excel</span>
+      <span class="skill-pill">Team Collaboration</span>
+      <span class="skill-pill">Public Speaking</span>
+      <span class="skill-pill">Data Analysis</span>
+      <span class="skill-pill">Time Management</span>
+      <span class="skill-pill">Social Media Marketing</span>
+      <span class="skill-pill">I-Kiribati Language</span>
+      <span class="skill-pill">Resilience &amp; Grit</span>
+      <span class="skill-pill">Cross-Cultural Communication</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="py-4 text-center">
+  <div class="container">
+    <div class="mb-3 d-flex justify-content-center gap-4">
+      <a href="mailto:matthewfred54@gmail.com" title="Email">
+        <i class="fas fa-envelope fa-lg"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+    </div>
+    <p class="mb-0 small">&copy; 2026 Matthew Fredrick. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
